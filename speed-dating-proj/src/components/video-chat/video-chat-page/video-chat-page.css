@@ -1,0 +1,42 @@
+
+.video-chat-card > *{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.video-chat-page-main, .video-chat-card, .video-chat-actions-card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.video-chat-card {
+    margin: 10px;
+    background-color: #080606f0;
+}
+
+.video-chat-actions-card{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.video-chat-action-btns {
+    padding-right: 10px;
+    display: flex;
+}
+
+.video-chat-timer {
+    padding-left: 10px;
+}
+
+.video-chat-action-btns > div{
+    margin: 5px;
+}
+
+.video-chat-title {
+    padding: 10px;
+}

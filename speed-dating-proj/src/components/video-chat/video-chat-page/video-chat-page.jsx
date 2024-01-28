@@ -1,10 +1,24 @@
 // VideoChatPage.js
 import React, { useState, useEffect } from 'react';
 import { Typography, Button } from '@mui/material';
+import video_chat_mock_img from '../../../assets/video-chat-mock.png'
+import './video-chat-page.css';
 
 const VideoChatPage = () => {
     const initialTimer = 10 * 60; // 10 minutes in seconds
     const [timer, setTimer] = useState(initialTimer);
+
+    useEffect(() => {
+        if (timer <= 0) {
+            handleTimerEnd();
+        }
+    }, [timer]);
+
+    const handleTimerEnd = ()=>{
+        console.log('timer ended, chat finished');
+        window.location.href = './finished-chat';
+    };
+
 
     useEffect(() => {
         const timerInterval = setInterval(() => {
@@ -17,6 +31,7 @@ const VideoChatPage = () => {
     const handleNextConversation = () => {
         // Implement logic to move to the next conversation
         console.log('Moving to the next conversation');
+        window.location.href = './finished-chat'
     };
 
     const handleRequestAnother10Minutes = () => {
@@ -32,19 +47,31 @@ const VideoChatPage = () => {
     };
 
     return (
-        <div>
-
-            <Typography variant="h4">Video Chat</Typography>
-            <div>
-                <Typography variant="h5">Timer: {formatTime(timer)}</Typography>
-                <Button variant="contained" color="primary" onClick={handleNextConversation}>
-                    Next Conversation
-                </Button>
-                <Button variant="contained" color="secondary" onClick={handleRequestAnother10Minutes}>
-                    Request Another 10 Minutes
-                </Button>
+        <div className="video-chat-page-main main-div">
+            <div className="video-chat-card mycard">
+                <Typography variant="h5" color="primary" className="video-chat-title">Talking to Yoav</Typography>
+                <div className="video-chat-container">
+                    {/*insert video chat component*/}
+                    <img src={video_chat_mock_img} className="video-chat-mock-img" alt="mock"/>
+                </div>
             </div>
-            {/* Add video chat component here */}
+            <div className="video-chat-actions-card mycard">
+                <div className="video-chat-timer">
+                    <Typography variant="h5">Time left: {formatTime(timer)}</Typography>
+                </div>
+                <div className="video-chat-action-btns">
+                    <div className="next-conversation-btn">
+                        <Button variant="contained" color="secondary" onClick={handleNextConversation}>
+                            Next Conversation
+                        </Button>
+                    </div>
+                    <div className="add-time-btn">
+                        <Button variant="contained" color="secondary" onClick={handleRequestAnother10Minutes}>
+                            Lets keep talking
+                        </Button>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

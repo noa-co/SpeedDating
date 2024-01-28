@@ -7,9 +7,9 @@ const LoadingVideoChat = () => {
     useEffect(() => {
         // todo
         console.log('ask server for a video chat');
-        // setTimeout(()=>{
-        //     window.location.href = '/video-chat'
-        // }, 200)
+        setTimeout(()=>{
+            window.location.href = '/video-chat'
+        }, 5000)
     }, []); // The empty dependency array means the effect runs once when the component mounts
 
     return (

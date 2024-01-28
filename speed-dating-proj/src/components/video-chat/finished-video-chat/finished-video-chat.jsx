@@ -4,12 +4,12 @@ import './finished-video-chat.css'
 const FinishedVideoChat = () => {
     const onShareClicked = ()=>{
         // todo send to server
-        window.location.href = '/loading-video'
+        window.location.href = '/loading-chat'
     };
 
     const onDontShareClicked = ()=>{
         // todo send to server
-        window.location.href = '/loading-video'
+        window.location.href = '/loading-chat'
     };
 
     return (

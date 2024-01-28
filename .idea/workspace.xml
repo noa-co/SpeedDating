@@ -2,12 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffdc884b-4819-45bb-9e14-9a707056f138" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SpeedDating.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speed-dating-proj/public/flash-flirt-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speed-dating-proj/public/flash-flirt-sand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/assets/video-chat-mock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-chat-page/video-chat-page.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-display/zoom-video-display.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/finished-video-chat/finished-video-chat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/finished-video-chat/finished-video-chat.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/loading-video-chat/loading-video-chat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/loading-video-chat/loading-video-chat.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-chat-page/video-chat-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-chat-page/video-chat-page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/logo.svg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,20 +33,109 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-chat-page/video-chat-page.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="51" column="101" selection-start-line="51" selection-start-column="101" selection-end-line="51" selection-end-column="101" />
+              <folding>
+                <element signature="e#20#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/public/manifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-display/zoom-video-display.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="66" column="2" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="2" />
+              <folding>
+                <element signature="e#20#79#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/App.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/App.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="44" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/finished-video-chat/finished-video-chat.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+            <state relative-caret-position="150">
+              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/public/robots.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/loading-video-chat/loading-video-chat.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-chat-page/video-chat-page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>logo</find>
+      <find>loading-video</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +145,14 @@
       <list>
         <option value="$PROJECT_DIR$/speed-dating-proj/src/components/user-form/user-form.jsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-display/video-display.jsx" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-display/zoom-video-display.jsx" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/loading-video-chat/loading-video-chat.jsx" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-chat-page/video-chat-page.css" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-chat-page/video-chat-page.jsx" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/public/index.html" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/public/manifest.json" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/finished-video-chat/finished-video-chat.jsx" />
       </list>
     </option>
   </component>
@@ -74,7 +183,70 @@
               <item name="SpeedDating" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpeedDating" type="462c0819:PsiDirectoryNode" />
               <item name="speed-dating-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpeedDating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeedDating" type="462c0819:PsiDirectoryNode" />
+              <item name="speed-dating-proj" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpeedDating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeedDating" type="462c0819:PsiDirectoryNode" />
+              <item name="speed-dating-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpeedDating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeedDating" type="462c0819:PsiDirectoryNode" />
+              <item name="speed-dating-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpeedDating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeedDating" type="462c0819:PsiDirectoryNode" />
+              <item name="speed-dating-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shared-details-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpeedDating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeedDating" type="462c0819:PsiDirectoryNode" />
+              <item name="speed-dating-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="video-chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpeedDating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeedDating" type="462c0819:PsiDirectoryNode" />
+              <item name="speed-dating-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="video-chat" type="462c0819:PsiDirectoryNode" />
+              <item name="loading-video-chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpeedDating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeedDating" type="462c0819:PsiDirectoryNode" />
+              <item name="speed-dating-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="video-chat" type="462c0819:PsiDirectoryNode" />
+              <item name="video-chat-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpeedDating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpeedDating" type="462c0819:PsiDirectoryNode" />
+              <item name="speed-dating-proj" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="video-chat" type="462c0819:PsiDirectoryNode" />
+              <item name="video-display" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -86,15 +258,19 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/speed-dating-proj/public" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/speed-dating-proj/src/assets" />
       <recent name="$PROJECT_DIR$/speed-dating-proj" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/speed-dating-proj/public" />
       <recent name="$PROJECT_DIR$/speed-dating-proj" />
     </key>
   </component>
@@ -122,12 +298,12 @@
       <updated>1706443460826</updated>
       <workItem from="1706443461999" duration="1594000" />
       <workItem from="1706445730075" duration="37000" />
-      <workItem from="1706446087894" duration="145000" />
+      <workItem from="1706446087894" duration="4373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1776000" />
+    <option name="totallyTimeSpent" value="6004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="212" y="43" width="1159" height="785" extended-state="0" />
@@ -136,8 +312,9 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24956064" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -145,7 +322,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32900432" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -160,13 +337,133 @@
     <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/homepage/homepage.css" />
     <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx" />
     <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/user-form/user-form.jsx" />
-    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/App.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="43" column="14" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-display/video-display-mock.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/node_modules/@zoom/videosdk/dist/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/node_modules/@zoom/videosdk/dist/types/videoclient.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/node_modules/@zoom/videosdk/dist/types/zoomvideo.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/loading-video-chat/loading-video-chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/loading-video-chat/loading-video-chat.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-chat-page/video-chat-page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-chat-page/video-chat-page.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="51" column="101" selection-start-line="51" selection-start-column="101" selection-end-line="51" selection-end-column="101" />
+          <folding>
+            <element signature="e#20#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/public/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/public/logo192.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/public/logo512.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/public/robots.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/video-display/zoom-video-display.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="66" column="2" selection-start-line="66" selection-start-column="2" selection-end-line="66" selection-end-column="2" />
+          <folding>
+            <element signature="e#20#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/finished-video-chat/finished-video-chat.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
         </state>
       </provider>
     </entry>
