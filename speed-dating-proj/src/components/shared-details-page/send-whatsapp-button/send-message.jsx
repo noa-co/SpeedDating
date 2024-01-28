@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Input from "@mui/material/Input";
 import Button from "@mui/material/Button";
@@ -9,7 +9,12 @@ import './send-message.css';
 const SendMessage = ({handleClose, show, phone}) => {
     const CHARACTER_LIMIT = 100;
 
-    const showHideClassName = show ? 'popup display-block' : 'popup display-none';
+    const [showState, setShow] = useState(show);
+    const showHideClassName = showState ? 'popup display-block' : 'popup display-none';
+
+
+    useEffect(() => { setShow(show) }, [show]);
+
 
     const [numberEmptyError, setNumberEmptyError] = useState(false);
     const [messageEmptyError, setMessageEmptyError] = useState(false);
@@ -19,7 +24,24 @@ const SendMessage = ({handleClose, show, phone}) => {
         message: "",
     });
 
+    const ref = useRef(null);
+
     const { mobileNumber, message } = formData;
+
+    const handleClickOutside = (event) => {
+        if (ref.current && !ref.current.contains(event.target) && showState) {
+            handleClose();
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('click', handleClickOutside, true);
+        return () => {
+            document.removeEventListener('click', handleClickOutside, true);
+        };
+    }, []);
+
+
 
     const onChange = (e) => {
         e.preventDefault();
@@ -51,9 +73,9 @@ const SendMessage = ({handleClose, show, phone}) => {
     };
 
     return (
-        <div className={showHideClassName}>
+        <div className={showHideClassName} >
             <div className='popup-main'>
-                <div className='whatsapp-card app'>
+                <div className='whatsapp-card app' ref={ref}>
                     <div className='title flex_middle'>
                         <div style={{ marginRight: "0.5em" }}>
                             <WhatsAppIcon style={{backgroundColor: 'white' ,color: '#08db42' ,borderRadius: '50%'}}/>
@@ -67,7 +89,7 @@ const SendMessage = ({handleClose, show, phone}) => {
                         <div className='errors'>Message cannot be empty!</div>
                     )}
                     {!numberEmptyError && !messageEmptyError && (
-                        <div className='errors-null'></div>
+                        <div className='errors-null'/>
                     )}
                     <div className='search_contact app'>
                         <Input

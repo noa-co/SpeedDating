@@ -12,7 +12,7 @@ const ContactDetailsCard = ({contact, handleClick}) => {
             </header>
             <h1 className="bold-text">
                 {contact.name}
-                <span className="normal-text">{contact.age}</span>
+                <div className="normal-text">{contact.age}</div>
             </h1>
             <h2 className="normal-text">{contact.city}</h2>
             <div className="contact-details">

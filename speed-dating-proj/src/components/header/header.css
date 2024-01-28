@@ -3,29 +3,30 @@
     width: 300px;
 }
 
-.left-options{
+.right-options{
     display: flex;
-    width: 25%;
+    align-items: center;
+    align-content: center;
 }
 
 .header-text-logo{
     padding-top: 10px;
-    width: 100%;
     display: flex;
     justify-content: center;
-    padding-right: 20%;
 }
 
 
-.header-profile-btn, .header-logout-btn {
+.header-profile-btn, .header-logout-btn , .header-shared-details-btn{
     display: flex;
     flex-direction: column;
-
+    margin: 5px;
 }
 
 .header-toolbar, .header-main {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
+    padding-right: 20px;
+
 }

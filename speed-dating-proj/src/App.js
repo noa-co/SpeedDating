@@ -34,7 +34,7 @@ const App = () => {
                   <Route path="/loading-chat" element={<LoadingVideoChat/>}/>
                   <Route path="/finished-chat" element={<FinishedVideoChat/>}/>
                   <Route path="/video-chat" element={<VideoChatPage/>}/>
-                  <Route path="/shared-details" element={SharedDetailsPage} />
+                  <Route path="/shared-details" element={<SharedDetailsPage/>} />
               </Routes>
             </div>
           </Router>

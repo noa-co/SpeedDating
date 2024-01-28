@@ -1,5 +1,5 @@
 import Header from "../header/header";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import ContactDetailsCard from "./contact-details-card/contact-details-card";
 import './shared-details-page.css'
 import SendMessage from "./send-whatsapp-button/send-message";
@@ -24,13 +24,16 @@ const SharedDetailsPage = () => {
         setShowPopup(!showPopup);
     };
 
-    const [showPopup, setShowPopup] = useState(true);
-    const [sendToPhone, setSendToPhone] = useState('');
+    const [showPopup, setShowPopup] = useState(false);
+    const [sendToPhone, setSendToPhone] = useState('0527799973');
+
+
 
     const handleWhatsappClick = (phone)=>{
         setSendToPhone(phone);
         togglePopUp();
-    }
+    };
+
 
     return (
         <div className="shared-details-page-main main-div">
@@ -38,12 +41,13 @@ const SharedDetailsPage = () => {
                 <Header/>
             </div>
             <div className="shared-details-items">
+                {showPopup}
                 {mockContactData.map((contact) => (
                     <ContactDetailsCard key={contact.id} contact={contact} handleClick={()=>handleWhatsappClick(contact.phone)}/>
                 ))}
             </div>
 
-            <SendMessage show={showPopup} handleClose={togglePopUp} phone={sendToPhone}/>
+            <SendMessage key={showPopup} show={showPopup} handleClose={togglePopUp} phone={sendToPhone}/>
         </div>
     );
 };

@@ -14,17 +14,27 @@
 /*}}*/
 
 .popup {
-    position: fixed;
-    top: 40%;
-    left: 40%;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(94, 110, 141, 0.9);
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+
 }
 
 .popup-main {
     background: rgb(212 246 228);
+    position: fixed;
     padding: 20px;
     border-radius: 10px;
+    top: 40%;
+    left: 40%;
 }
 
 .display-block {
