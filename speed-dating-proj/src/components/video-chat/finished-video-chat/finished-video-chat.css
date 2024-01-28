@@ -1,0 +1,24 @@
+.finished-video-chat-main, .finished-video-chat-card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.finished-video-chat-card {
+    margin: 10px;
+    background-color: #080606f0;
+    flex-direction: column;
+}
+.finished-video-chat-card > *{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.finished-video-title {
+    color: white;
+}
+
+.finished-video-button {
+    margin: 10px;
+}

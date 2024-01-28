@@ -1,0 +1,31 @@
+.text-logo {
+    height: 70px;
+    width: 300px;
+}
+
+.left-options{
+    display: flex;
+    width: 25%;
+}
+
+.header-text-logo{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-right: 20%;
+}
+
+
+.header-profile-btn, .header-logout-btn {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-toolbar, .header-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

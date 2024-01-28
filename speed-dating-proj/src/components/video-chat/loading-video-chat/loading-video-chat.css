@@ -1,0 +1,25 @@
+.loading-video-chat-main, .loading-video-chat-card{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.loading-video-chat-card {
+    margin: 10px;
+    background-color: #080606f0;
+    flex-direction: column;
+}
+.loading-video-chat-card > *{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.loading-video-title {
+    color: white;
+}
+
+.loader {
+    width: 500px;
+    padding-right: 10px;
+}

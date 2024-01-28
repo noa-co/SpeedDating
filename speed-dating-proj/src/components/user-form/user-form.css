@@ -1,0 +1,57 @@
+.MuiFormControl-root {
+    width: 50%;
+}
+
+.main-form-div{
+    width: 80%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    align-self: center;
+    flex-direction: column;
+    background-color: #fce7a538;
+    margin-bottom: 10px;
+}
+
+.user-form-header-div {
+    height: 20%;
+}
+
+.main-form-div > div {
+    width: 100%;
+}
+
+.main-title-div {
+    height: 10%;
+}
+
+.form-main, .main-form-div , .main-title-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 50%;
+}
+
+form > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.user-form-main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.form-main{
+    margin-top: 50px;
+}
+
+.save-btn {
+    margin-top: 2px;
+}
