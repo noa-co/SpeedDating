@@ -1,0 +1,14 @@
+.shared-details-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 80%;
+    overflow: scroll;
+    margin-top: 10%;
+}
+
+.shared-details-page-main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}

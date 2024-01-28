@@ -8,6 +8,7 @@ import React from "react";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import LoadingVideoChat from "./components/video-chat/loading-video-chat/loading-video-chat";
 import FinishedVideoChat from "./components/video-chat/finished-video-chat/finished-video-chat";
+import SharedDetailsPage from "./components/shared-details-page/shared-details-page";
 
 const theme = createTheme({
     palette: {
@@ -26,13 +27,14 @@ const App = () => {
           <Router>
             <div style={{height:'100%'}}>
               <Routes>
-                  <Route path="/" element={<UserForm/>}/>
+                  <Route path="/" element={<SharedDetailsPage/>}/>
                   <Route path="/login" element={<LoginPage/>}/>
                   <Route path="/user-form" element={<UserForm/>}/>
                   <Route path="/homepage" element={<HomePage/>}/>
                   <Route path="/loading-chat" element={<LoadingVideoChat/>}/>
                   <Route path="/finished-chat" element={<FinishedVideoChat/>}/>
                   <Route path="/video-chat" element={<VideoChatPage/>}/>
+                  <Route path="/shared-details" element={SharedDetailsPage} />
               </Routes>
             </div>
           </Router>
