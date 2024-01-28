@@ -12,3 +12,25 @@
 /*    fontSize: 10,*/
 /*},*/
 /*}}*/
+
+.popup {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-main {
+    background: rgb(212 246 228);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}

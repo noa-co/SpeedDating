@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffdc884b-4819-45bb-9e14-9a707056f138" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/assets/backgound.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/assets/hole-profile-love.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/assets/person-love.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.css" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -48,8 +41,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            <state relative-caret-position="228">
+              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,20 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+            <state relative-caret-position="165">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -79,10 +63,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+            <state relative-caret-position="175">
+              <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="164">
+              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -125,6 +124,9 @@
     <findStrings>
       <find>logo</find>
       <find>loading-video</find>
+      <find>ke</find>
+      <find>helper</find>
+      <find>white</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,19 +146,18 @@
         <option value="$PROJECT_DIR$/speed-dating-proj/public/manifest.json" />
         <option value="$PROJECT_DIR$/speed-dating-proj/src/components/video-chat/finished-video-chat/finished-video-chat.jsx" />
         <option value="$PROJECT_DIR$/speed-dating-proj/src/App.js" />
-        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx" />
-        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.jsx" />
         <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.css" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.css" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.jsx" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.jsx" />
+        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx" />
         <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.css" />
         <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.jsx" />
-        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.css" />
-        <option value="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="117" />
-    <option name="y" value="23" />
+    <option name="y" value="207" />
     <option name="width" value="1159" />
     <option name="height" value="785" />
   </component>
@@ -280,12 +281,12 @@
       <updated>1706443460826</updated>
       <workItem from="1706443461999" duration="1594000" />
       <workItem from="1706445730075" duration="37000" />
-      <workItem from="1706446087894" duration="9331000" />
+      <workItem from="1706446087894" duration="11516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10962000" />
+    <option name="totallyTimeSpent" value="13147000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,7 +298,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="117" y="23" width="1159" height="785" extended-state="0" />
+    <frame x="0" y="207" width="1159" height="785" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24956064" />
@@ -473,13 +474,6 @@
     <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -496,34 +490,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        <state relative-caret-position="165">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="43" lean-forward="true" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="164">
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-whatsapp-button.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        <state relative-caret-position="284">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

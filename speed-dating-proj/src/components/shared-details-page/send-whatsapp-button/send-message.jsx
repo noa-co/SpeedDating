@@ -2,17 +2,20 @@ import React, {useState} from "react";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Input from "@mui/material/Input";
 import Button from "@mui/material/Button";
+import './send-message.css';
 
 
 
-const SendMessage = () => {
+const SendMessage = ({handleClose, show, phone}) => {
     const CHARACTER_LIMIT = 100;
+
+    const showHideClassName = show ? 'popup display-block' : 'popup display-none';
 
     const [numberEmptyError, setNumberEmptyError] = useState(false);
     const [messageEmptyError, setMessageEmptyError] = useState(false);
 
     const [formData, setFormData] = useState({
-        mobileNumber: "",
+        mobileNumber: phone,
         message: "",
     });
 
@@ -42,72 +45,69 @@ const SendMessage = () => {
             let url = `https://web.whatsapp.com/send?phone=${number}`;
             url += `&text=${encodeURI(message)}&app_absent=0`;
             window.open(url);
-
+            handleClose()
             // TODO: Enter code here
         }
     };
 
     return (
-        <div className='communication'>
-            <div className='whatsapp-card app'>
-                <div className='title flex_middle'>
-                    <div style={{ marginRight: "0.5em" }}>
-                        <WhatsAppIcon />
+        <div className={showHideClassName}>
+            <div className='popup-main'>
+                <div className='whatsapp-card app'>
+                    <div className='title flex_middle'>
+                        <div style={{ marginRight: "0.5em" }}>
+                            <WhatsAppIcon style={{backgroundColor: 'white' ,color: '#08db42' ,borderRadius: '50%'}}/>
+                        </div>
+                        <div>Send Message</div>
                     </div>
-                    <div>Send Message</div>
-                </div>
-                {numberEmptyError && (
-                    <div className='errors'>Mobile number cannot be empty!</div>
-                )}
-                {messageEmptyError && (
-                    <div className='errors'>Message cannot be empty!</div>
-                )}
-                {!numberEmptyError && !messageEmptyError && (
-                    <div className='errors-null'>.</div>
-                )}
-                <div className='search_contact app'>
-                    <Input
-                        error={numberEmptyError}
-                        label='Mobile Number'
-                        placeholder='Mobile Number'
-                        name='mobileNumber'
-                        value={mobileNumber}
-                        onChange={onChange}
-                        size='small'
-                        style={{
-                            margin: "1em 0em",
-                        }}
-                        required
-                    />
-                </div>
-                <div className='message app' style={{ marginTop: "1.5em" }}>
-                    <Input
-                        multiline
-                        maxRows={4}
-                        label='Message'
-                        placeholder='Hi! Sending a message from React....'
-                        size='small'
-                        name='message'
-                        value={message}
-                        onChange={onChange}
-                        required
-                        error={message.length > CHARACTER_LIMIT - 1 || messageEmptyError}
-                        helperText={
-                            !(message.length > CHARACTER_LIMIT - 1)
-                                ? `${message.length}/${CHARACTER_LIMIT}`
-                                : "Max length exceeded"
-                        }
-                    />
-                </div>
-                <div style={{ marginTop: "1.5em" }}>
-                    <Button
-                        onClick={onSubmit}
-                        variant='outlined'
-                        color='success'
-                        size='small'
-                    >
-                        Send
-                    </Button>
+                    {numberEmptyError && (
+                        <div className='errors'>Mobile number cannot be empty!</div>
+                    )}
+                    {messageEmptyError && (
+                        <div className='errors'>Message cannot be empty!</div>
+                    )}
+                    {!numberEmptyError && !messageEmptyError && (
+                        <div className='errors-null'></div>
+                    )}
+                    <div className='search_contact app'>
+                        <Input
+                            error={numberEmptyError}
+                            label='Mobile Number'
+                            placeholder='Mobile Number'
+                            name='mobileNumber'
+                            value={mobileNumber}
+                            onChange={onChange}
+                            size='small'
+                            style={{
+                                margin: "1em 0em",
+                            }}
+                            required
+                        />
+                    </div>
+                    <div className='message app' style={{ marginTop: "1.5em" }}>
+                        <Input
+                            multiline
+                            maxRows={4}
+                            label='Message'
+                            placeholder='Hi! I had a great time meeting you...'
+                            size='small'
+                            name='message'
+                            value={message}
+                            onChange={onChange}
+                            required
+                            error={message.length > CHARACTER_LIMIT - 1 || messageEmptyError}
+                        />
+                    </div>
+                    <div style={{ marginTop: "1.5em" }}>
+                        <Button
+                            onClick={onSubmit}
+                            variant='outlined'
+                            color='success'
+                            size='small'
+                        >
+                            Send
+                        </Button>
+                    </div>
                 </div>
             </div>
         </div>
