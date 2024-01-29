@@ -19,6 +19,7 @@ const HomePage = () => {
                 >
                     <img src={start_dating} className="start-dating-image"/>
                     <div className="start-dating-text">Start Dating</div>
+                    <div className="start-dating-text">Hi moon</div>
                 </Button>
             </div>
         </div>
