@@ -14,7 +14,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@zoom/videosdk": "^1.10.5",
     "axios": "^1.6.7",
-    "node": "latest",
+    "node": "16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3",
