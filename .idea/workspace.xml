@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffdc884b-4819-45bb-9e14-9a707056f138" name="Default Changelist" comment="">
+    <list default="true" id="ffdc884b-4819-45bb-9e14-9a707056f138" name="Default Changelist" comment="added lambda demo">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/header/header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/header/header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.css" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/contact-details-card/contact-details-card.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.css" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/send-whatsapp-button/send-message.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/components/shared-details-page/shared-details-page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speed-dating-proj/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/speed-dating-proj/src/index.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,6 +132,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="danny &lt;80157270+danny-rubin@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -168,12 +165,19 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectFrameBounds">
     <option name="x" value="126" />
     <option name="y" value="68" />
     <option name="width" value="1159" />
     <option name="height" value="785" />
   </component>
+  <component name="ProjectId" id="2bdqqTb1CeoCmMX8OII93lHA52r" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -251,37 +255,55 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/speed-dating-proj/public" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/drubinov/Desktop/studies/SpeedDating&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/drubinov/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/speed-dating-proj/src/assets" />
-      <recent name="$PROJECT_DIR$/speed-dating-proj" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/speed-dating-proj/public" />
       <recent name="$PROJECT_DIR$/speed-dating-proj" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/speed-dating-proj/src/assets" />
+      <recent name="$PROJECT_DIR$/speed-dating-proj" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/speed-dating-proj/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="npm.start" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -295,7 +317,34 @@
       <workItem from="1706443461999" duration="1594000" />
       <workItem from="1706445730075" duration="37000" />
       <workItem from="1706446087894" duration="14773000" />
+      <workItem from="1706555494872" duration="12184000" />
+      <workItem from="1706611572401" duration="2886000" />
     </task>
+    <task id="LOCAL-00001" summary="Update package.json&#10;&#10;changed node version to 16">
+      <option name="closed" value="true" />
+      <created>1706555780300</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706555780300</updated>
+    </task>
+    <task id="LOCAL-00002" summary="checking CI CD Hi moon text">
+      <option name="closed" value="true" />
+      <created>1706559668315</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706559668315</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added lambda demo">
+      <option name="closed" value="true" />
+      <created>1706613436744</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706613436744</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -335,7 +384,13 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update package.json&#10;&#10;changed node version to 16" />
+    <MESSAGE value="checking CI CD Hi moon text" />
+    <MESSAGE value="added lambda demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lambda demo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/speed-dating-proj/src/index.css" />
