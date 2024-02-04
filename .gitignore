@@ -26,6 +26,8 @@ replay_pid*
 # dependencies
 speed-dating-proj/node_modules
 speed-dating-proj/.pnp
+node_modules
+.idea/*
 .pnp.js
 
 # testing
