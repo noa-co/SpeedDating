@@ -10,6 +10,7 @@ const myAPI = "apiTest";
 const path = "/test/1";
 
 
+// todo noa: use this example to invoke lambdas when theres BE.
 async function invokeLambda() {
     try {
         const restOperation = get({
@@ -26,6 +27,8 @@ async function invokeLambda() {
 
 
 const HomePage = () => {
+
+    // todo noa: this also
     const [clicked, setClicked] = useState(false);
     const handleClick = () => {
         setClicked(true);
@@ -50,9 +53,6 @@ const HomePage = () => {
                     <img src={start_dating} className="start-dating-image"/>
                     <div className="start-dating-text">Start Dating</div>
                 </Button>
-                <div>
-                    <button onClick={handleClick}>invoke lambda</button>
-                </div>
             </div>
 
         </div>
