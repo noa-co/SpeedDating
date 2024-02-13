@@ -7,7 +7,7 @@ const ContactDetailsCard = ({contact, handleClick}) => {
 
     return (
         <div className={"mycard details-card-container details-card-"+contact.name}>
-        <header className="details-card-header">
+            <header className="details-card-header">
                 <img className="person-avatar" src={person_avatar} alt={contact.name} />
             </header>
             <h1 className="bold-text">

@@ -5,8 +5,9 @@ import video_chat_mock_img from '../../../assets/video-chat-mock.png'
 import './video-chat-page.css';
 
 const VideoChatPage = () => {
-    const initialTimer = 10 * 60; // 10 minutes in seconds
+    const initialTimer = 5 * 60; // 10 minutes in seconds
     const [timer, setTimer] = useState(initialTimer);
+    const [didExtendTime, setDidExtendTime] = useState(false);
 
     useEffect(() => {
         if (timer <= 0) {
@@ -35,7 +36,8 @@ const VideoChatPage = () => {
     };
 
     const handleRequestAnother10Minutes = () => {
-        setTimer(initialTimer); // Reset timer to 10 minutes
+        setDidExtendTime(true);
+        setTimer(timer + 10*60); // Reset timer to 10 minutes
         // Implement logic to request another 10 minutes
         console.log('Requesting another 10 minutes');
     };
@@ -66,7 +68,7 @@ const VideoChatPage = () => {
                         </Button>
                     </div>
                     <div className="add-time-btn">
-                        <Button variant="contained" color="secondary" onClick={handleRequestAnother10Minutes}>
+                        <Button variant="contained" color="secondary" disabled={didExtendTime} onClick={handleRequestAnother10Minutes}>
                             Lets keep talking
                         </Button>
                     </div>

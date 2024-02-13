@@ -27,7 +27,7 @@ const App = () => {
           <Router>
             <div style={{height:'100%'}}>
               <Routes>
-                  <Route path="/" element={<SharedDetailsPage/>}/>
+                  <Route path="/" element={<HomePage/>}/>
                   <Route path="/login" element={<LoginPage/>}/>
                   <Route path="/user-form" element={<UserForm/>}/>
                   <Route path="/homepage" element={<HomePage/>}/>
