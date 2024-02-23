@@ -1,8 +1,8 @@
 // VideoChatPage.js
 import React, { useState, useEffect } from 'react';
 import { Typography, Button } from '@mui/material';
-import video_chat_mock_img from '../../../assets/video-chat-mock.png'
 import './video-chat-page.css';
+import Meeting from "../video-display/meeting";
 
 const VideoChatPage = () => {
     const initialTimer = 5 * 60; // 10 minutes in seconds
@@ -51,10 +51,9 @@ const VideoChatPage = () => {
     return (
         <div className="video-chat-page-main main-div">
             <div className="video-chat-card mycard">
-                <Typography variant="h5" color="primary" className="video-chat-title">Talking to Yoav</Typography>
+                {/*<Typography variant="h5" color="primary" className="video-chat-title">Talking to Yoav</Typography>*/}
                 <div className="video-chat-container">
-                    {/*insert video chat component*/}
-                    <img src={video_chat_mock_img} className="video-chat-mock-img" alt="mock"/>
+                    <Meeting/>
                 </div>
             </div>
             <div className="video-chat-actions-card mycard">
