@@ -5,6 +5,7 @@ import Header from "../header/header";
 import "./homepage.css"
 import start_dating from '../../assets/start-dating.png'
 import { get } from 'aws-amplify/api';
+import Login from './login.jsx'
 
 const myAPI = "apiTest";
 const path = "/test/1";
@@ -42,7 +43,9 @@ const HomePage = () => {
     return (
         <div className="main-div">
             <Header/>
-
+            <div className="login-div">
+            <Login/>
+            </div>
             <div className="homepage-body main-div">
                 <Button
                     className="start-dating-button"
