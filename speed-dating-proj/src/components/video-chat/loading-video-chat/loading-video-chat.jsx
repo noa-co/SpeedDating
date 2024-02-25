@@ -10,8 +10,13 @@ const LoadingVideoChat = () => {
 
         try {
             const restOperation = get({
-                apiName: 'findMatch',
-                path: '/findMatch'
+                apiName: 'matches',
+                path: '/matches/find',
+                options: {
+                    headers: {
+                        Authorization: 'test'
+                    }
+                }
             });
             const response = restOperation.response;
             console.log(response);
