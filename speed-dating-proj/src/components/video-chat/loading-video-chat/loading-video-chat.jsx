@@ -2,28 +2,23 @@ import React, {useEffect} from 'react';
 import Button from "@mui/material/Button";
 import loading_gif from '../../../assets/heart-loader.gif'
 import './loading-video-chat.css'
+import { get } from 'aws-amplify/api';
 
 const LoadingVideoChat = () => {
     useEffect(() => {
-        // todo
         console.log('ask server for a video chat');
 
-        fetch(" https://xab92hx6ih.execute-api.us-east-1.amazonaws.com/staging/findMatch",
-            {
-                headers : {
-                    "Access-Control-Allow-Origin" : "*"
-                }
-            })
-            .then(r => {
-                if (!r.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data = r.json();
-                window.location.href = '/video-chat?token=' + data["token"] + "session_id=" + data["session_id"];
-            })
-            .catch(error => {
-                throw new Error('Network response was not ok');
+        try {
+            const restOperation = get({
+                apiName: 'findMatch',
+                path: '/findMatch'
             });
+            const response = restOperation.response;
+            console.log(response);
+            // window.location.href = '/video-chat?token=' + response["token"] + "session_id=" + response["session_id"];
+        } catch (error) {
+            console.log('GET call failed: ', error);
+        }
 
 
     }, []); // The empty dependency array means the effect runs once when the component mounts
