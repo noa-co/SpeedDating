@@ -5,6 +5,7 @@ import {
     useParticipant,
 } from "@videosdk.live/react-sdk";
 import ReactPlayer from "react-player";
+import {useLocation} from "react-router-dom";
 
 function ParticipantView(props) {
     const micRef = useRef(null);
@@ -93,16 +94,36 @@ function MeetingView() {
     );
 }
 const Meeting = () => {
+
+    const [token, setToken] = useState('');
+    const [sessionId, setSessionId] = useState('');
+    const location = useLocation();
+
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+        const tokenParam = searchParams.get('token');
+        const sessionIdParam = searchParams.get('session_id');
+
+        if (tokenParam) {
+            setToken(tokenParam);
+        }
+
+        if (sessionIdParam) {
+            setSessionId(sessionIdParam);
+        }
+    }, [location]);
+
+
     return (
         <div>
             <MeetingProvider
                 config={{
-                    meetingId: "5fji-hsmg-g0b6",
+                    meetingId: sessionId,
                     micEnabled: true,
                     webcamEnabled: true,
                     name: "עידו's Org",
                 }}
-                token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiIwNGZiZDNlMS1iYzEwLTQ1ZGMtOGUzYi1iNjVkZDk2OGI1MGEiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTcwODYzNDczMiwiZXhwIjoxNzA5MjM5NTMyfQ.SrZWRe43Zgr_MFudXWX7Q5SH-L8B2HUQxXd5JyR1fFs"
+                token= {token}
             >
                 {<MeetingView/>}
             </MeetingProvider>
