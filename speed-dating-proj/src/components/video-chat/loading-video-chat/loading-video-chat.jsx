@@ -4,27 +4,30 @@ import loading_gif from '../../../assets/heart-loader.gif'
 import './loading-video-chat.css'
 import { get } from 'aws-amplify/api';
 
+async function fetchVideo(){
+    console.log('ask server for a video chat');
+    try {
+        const restOperation = get({
+            apiName: 'matches',
+            path: '/matches/find'
+        });
+        const { body } = await restOperation.response;
+        return body.json();
+
+    } catch (error) {
+        console.log('GET call failed: ', error);
+    }
+}
+
 const LoadingVideoChat = () => {
     useEffect(() => {
-        console.log('ask server for a video chat');
 
-        try {
-            const restOperation = get({
-                apiName: 'matches',
-                path: '/matches/find',
-                options: {
-                    headers: {
-                        Authorization: 'test'
-                    }
-                }
-            });
-            const response = restOperation.response;
-            console.log(response);
-            // window.location.href = '/video-chat?token=' + response["token"] + "session_id=" + response["session_id"];
-        } catch (error) {
-            console.log('GET call failed: ', error);
-        }
-
+        fetchVideo()
+            .then(response =>
+            {
+                console.log(response);
+                window.location.href = '/video-chat?token=' + response["token"] + "&session_id=" + response["session_id"];
+            })
 
     }, []); // The empty dependency array means the effect runs once when the component mounts
 

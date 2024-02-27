@@ -5,6 +5,21 @@
       "name": "apiTest",
       "endpoint": "https://mg1weliael.execute-api.us-east-1.amazonaws.com/staging",
       "region": "us-east-1"
+    },
+    {
+      "name": "findMatch",
+      "endpoint": "https://xab92hx6ih.execute-api.us-east-1.amazonaws.com/staging",
+      "region": "us-east-1"
+    },
+    {
+      "name": "matches",
+      "endpoint": "https://cypy05205k.execute-api.us-east-1.amazonaws.com/staging",
+      "region": "us-east-1"
+    },
+    {
+      "name": "profiles",
+      "endpoint": "https://ti9309f7ac.execute-api.us-east-1.amazonaws.com/staging",
+      "region": "us-east-1"
     }
   ],
   "aws_cognito_identity_pool_id": "us-east-1:7ea22cf9-a333-4048-85ac-2da3e12f8187",
@@ -42,5 +57,16 @@
   },
   "aws_cognito_verification_mechanisms": [
     "EMAIL"
+  ],
+  "aws_dynamodb_all_tables_region": "us-east-1",
+  "aws_dynamodb_table_schemas": [
+    {
+      "tableName": "profiles-staging",
+      "region": "us-east-1"
+    },
+    {
+      "tableName": "matches-staging",
+      "region": "us-east-1"
+    }
   ]
 }

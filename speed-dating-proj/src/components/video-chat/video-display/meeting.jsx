@@ -93,17 +93,19 @@ function MeetingView() {
         </div>
     );
 }
-const Meeting = () => {
 
-    const [token, setToken] = useState('');
-    const [sessionId, setSessionId] = useState('');
+function Meeting() {
+
+    const [token, setToken] = useState(null);
+    const [sessionId, setSessionId] = useState(null);
     const location = useLocation();
 
     useEffect(() => {
         const searchParams = new URLSearchParams(location.search);
         const tokenParam = searchParams.get('token');
         const sessionIdParam = searchParams.get('session_id');
-
+        console.log(tokenParam);
+        console.log(sessionIdParam);
         if (tokenParam) {
             setToken(tokenParam);
         }
@@ -116,18 +118,28 @@ const Meeting = () => {
 
     return (
         <div>
-            <MeetingProvider
-                config={{
-                    meetingId: sessionId,
-                    micEnabled: true,
-                    webcamEnabled: true,
-                    name: "עידו's Org",
-                }}
-                token= {token}
-            >
-                {<MeetingView/>}
-            </MeetingProvider>
+            {!token || !sessionId ? (
+                <div></div>
+            ) : (
+                <div>
+                    <MeetingProvider
+                        config={{
+                            meetingId: sessionId,
+                            micEnabled: true,
+                            webcamEnabled: true,
+                            name: "עידו's Org",
+                        }}
+                        token={token}
+                    >
+                        {<MeetingView/>}
+                    </MeetingProvider>
+                </div>
+            )
+            }
         </div>
-    )
-};
+
+    );
+
+}
+
 export default Meeting;
