@@ -1,27 +1,61 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {
-    Typography,
     TextField,
     Select,
     MenuItem,
     FormControl,
     InputLabel,
-    Slider,
-    Checkbox,
-    FormGroup,
-    FormControlLabel,
     Button
 } from '@mui/material';
 import Header from "../header/header";
 import './user-form.css'
+import { getCurrentUser } from 'aws-amplify/auth';
+
 
 const locationList = ['North', 'Center', 'South'];
 const attractionList = ['Female', 'Male', 'Both'];
 const genderList = ['Male', 'Female', 'Other'];
 
 
+const myAPI = "apiTest";
+const path = "/test/1";
+
+
+// todo noa: use this example to invoke lambdas when theres BE.
+async function invokeLambda() {
+    try {
+        const restOperation = get({
+            apiName: myAPI,
+            path: path
+        });
+        const response = await restOperation.response;
+        console.log('GET call succeeded: ', response);
+    } catch (error) {
+        console.log('GET call failed: ', error);
+    }
+}
 
 const UserForm = () => {
+    const [userId, setUserId] = useState(undefined);
+    const [username, setUsername] = useState(undefined);
+
+    useEffect(() => {
+        currentAuthenticatedUser();
+    });
+
+    const currentAuthenticatedUser = ()=>
+    {
+        getCurrentUser().then(data=>{
+            console.log(data);
+            setUserId(data.userId);
+            setUsername(data.username)
+
+        }).catch(err=>{
+            console.log(err);
+        })
+    };
+
+
     // todo here get from server current profile state.
     const [formData, setFormData] = useState({
         location: '',
@@ -58,7 +92,7 @@ const UserForm = () => {
             </div>
             <div className="main-form-div mycard  main-div">
                 <div className="form-main">
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className="profile-form">
                         <div className="gender-field">
                             <FormControl required>
                                 <InputLabel className="gender-title">Gender:</InputLabel>

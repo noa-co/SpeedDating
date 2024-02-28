@@ -3,8 +3,12 @@ import React, { useState, useEffect } from 'react';
 import { Typography, Button } from '@mui/material';
 import './video-chat-page.css';
 import Meeting from "../video-display/meeting";
+import {useNavigate} from 'react-router-dom'
+
 
 const VideoChatPage = () => {
+    const navigate = useNavigate();
+
     const initialTimer = 5 * 60; // 10 minutes in seconds
     const [timer, setTimer] = useState(initialTimer);
     const [didExtendTime, setDidExtendTime] = useState(false);
@@ -17,7 +21,7 @@ const VideoChatPage = () => {
 
     const handleTimerEnd = ()=>{
         console.log('timer ended, chat finished');
-        window.location.href = './finished-chat';
+        navigate('/finished-chat');
     };
 
 
@@ -32,7 +36,7 @@ const VideoChatPage = () => {
     const handleNextConversation = () => {
         // Implement logic to move to the next conversation
         console.log('Moving to the next conversation');
-        window.location.href = './finished-chat'
+        navigate('/finished-chat')
     };
 
     const handleRequestAnother10Minutes = () => {

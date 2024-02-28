@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import {useNavigate} from 'react-router-dom'
 import Button from "@mui/material/Button";
 import loading_gif from '../../../assets/heart-loader.gif'
 import './loading-video-chat.css'
@@ -20,16 +21,18 @@ async function fetchVideo(){
 }
 
 const LoadingVideoChat = () => {
+    const navigate = useNavigate();
+
     useEffect(() => {
 
         fetchVideo()
             .then(response =>
             {
                 console.log(response);
-                window.location.href = '/video-chat?token=' + response["token"] + "&session_id=" + response["session_id"];
+                navigate('/video-chat?token=' + response["token"] + "&session_id=" + response["session_id"]);
             })
 
-    }, []); // The empty dependency array means the effect runs once when the component mounts
+    }, [navigate]); // The empty dependency array means the effect runs once when the component mounts
 
     return (
         <div className="loading-video-chat-main main-div">

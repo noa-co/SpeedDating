@@ -1,15 +1,18 @@
 import Button from "@mui/material/Button";
 import './finished-video-chat.css'
+import  {useNavigate} from 'react-router-dom'
 
 const FinishedVideoChat = () => {
+    const navigate = useNavigate();
+
     const onShareClicked = ()=>{
         // todo send to server
-        window.location.href = '/loading-chat'
+        navigate('/loading-chat');
     };
 
     const onDontShareClicked = ()=>{
         // todo send to server
-        window.location.href = '/loading-chat'
+        navigate('/loading-chat');
     };
 
     return (

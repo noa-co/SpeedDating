@@ -29,11 +29,11 @@
     align-items: center;
 }
 
-form {
+.profile-form {
     width: 50%;
 }
 
-form > * {
+.profile-form > * {
     display: flex;
     justify-content: center;
     align-items: center;
