@@ -1,10 +1,10 @@
 // Header.js
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { AppBar, Toolbar, Button } from '@mui/material';
 import text_logo from '../../assets/flash-flirt-text.png'
 import './header.css'
-import {ExitToApp, Person, Phone} from "@mui/icons-material";
-import { getCurrentUser, signOut } from 'aws-amplify/auth';
+import {ExitToApp, Person} from "@mui/icons-material";
+import {signOut } from 'aws-amplify/auth';
 import {useNavigate} from 'react-router-dom'
 
 
@@ -13,23 +13,6 @@ import {useNavigate} from 'react-router-dom'
 
 const Header = () => {
     const navigate = useNavigate();
-
-    const [username, setUsername] = useState(undefined);
-
-    useEffect(() => {
-        currentAuthenticatedUser();
-    }, [navigate]);
-
-    const currentAuthenticatedUser = ()=>
-    {
-        getCurrentUser().then(data=>{
-            console.log(data);
-            setUsername(data.username);
-
-        }).catch(err=>{
-            console.log(err);
-        })
-    };
 
     const handleSignOut= ()=>{
         signOut().then(()=>{
