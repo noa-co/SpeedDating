@@ -15,7 +15,7 @@ import { getCurrentUser } from 'aws-amplify/auth';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#ffecdf'
+            main: '#ffb8d3'
         },
         secondary: {
             main: '#90243a'

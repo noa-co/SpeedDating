@@ -47,7 +47,7 @@ const Header = () => {
                     <div className="header-logout">
                         <Button color="inherit" onClick={handleSignOut} className="header-logout-btn">
                             <ExitToApp/>
-                            Log Out {username}
+                            Logout
                         </Button>
                     </div>
                 </div>
@@ -64,13 +64,6 @@ const Header = () => {
                             Profile
                         </Button>
                     </div>
-                    <div className="header-shared-details">
-                        <Button color="inherit" href="/shared-details" className="header-shared-details-btn">
-                            <Phone/>
-                            Shared
-                        </Button>
-                    </div>
-
                 </div>
             </Toolbar>
         </AppBar>
