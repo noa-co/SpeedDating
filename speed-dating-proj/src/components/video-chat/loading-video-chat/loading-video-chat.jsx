@@ -3,33 +3,25 @@ import {useNavigate} from 'react-router-dom'
 import Button from "@mui/material/Button";
 import loading_gif from '../../../assets/heart-loader.gif'
 import './loading-video-chat.css'
-import { get } from 'aws-amplify/api';
+import {getRequest} from "../../../services/amplify-api-service";
 
-async function fetchVideo(){
-    console.log('ask server for a video chat');
-    try {
-        const restOperation = get({
-            apiName: 'matches',
-            path: '/matches/find'
-        });
-        const { body } = await restOperation.response;
-        return body.json();
+const matchesApiName = 'matches';
+const findMatchPath = '/matches/find';
 
-    } catch (error) {
-        console.log('GET call failed: ', error);
-    }
-}
 
 const LoadingVideoChat = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
 
-        fetchVideo()
+        getRequest(matchesApiName, findMatchPath)
             .then(response =>
             {
                 console.log(response);
                 navigate('/video-chat?token=' + response["token"] + "&session_id=" + response["session_id"]);
+            })
+            .catch(err=>{
+                console.log(`error getting matched. the error: ${err}`)
             })
 
     }, [navigate]); // The empty dependency array means the effect runs once when the component mounts
