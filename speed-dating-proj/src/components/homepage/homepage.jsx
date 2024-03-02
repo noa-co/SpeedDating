@@ -5,7 +5,7 @@ import Header from "../header/header";
 import "./homepage.css"
 import start_dating from '../../assets/start-dating.png'
 import love_texting from  '../../assets/love-texting.png'
-import wavy_background from '../../assets/wavy_background.png'
+import wavy_background from '../../assets/testing-background.png'
 
 const HomePage = () => {
 

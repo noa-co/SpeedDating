@@ -4,6 +4,7 @@ import Button from "@mui/material/Button";
 import loading_gif from '../../../assets/heart-loader.gif'
 import './loading-video-chat.css'
 import {getRequest} from "../../../services/amplify-api-service";
+import wavy_background from "../../../assets/testing-background.png";
 
 const matchesApiName = 'matches';
 const findMatchPath = '/matches/find';
@@ -27,7 +28,7 @@ const LoadingVideoChat = () => {
     }, [navigate]); // The empty dependency array means the effect runs once when the component mounts
 
     return (
-        <div className="loading-video-chat-main main-div">
+        <div className="loading-video-chat-main main-div" style={{backgroundImage: `url(${wavy_background})`}}>
             <div className="loading-video-chat-card mycard">
                 <div>
                     <h2 className="loading-video-title">
