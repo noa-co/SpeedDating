@@ -31,7 +31,7 @@ function LoginPage() {
             if (payload.event === 'signedIn'){
                 // todo noa check if user has profile so navigate to homepage
                 // todo otherwise navigate to user-form page.
-                navigate("/homepage");
+                navigate("/user-form");
             }
         });
 

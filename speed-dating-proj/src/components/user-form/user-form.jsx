@@ -6,6 +6,7 @@ import {getCurrentUser} from 'aws-amplify/auth';
 import Typography from "@mui/material/Typography";
 import {useNavigate} from 'react-router-dom';
 import {getRequest, postRequest, putRequest} from "../../services/amplify-api-service";
+import wavy_background from "../../assets/testing-background.png";
 
 
 const locationList = ['North', 'Center', 'South'];
@@ -60,6 +61,7 @@ const UserForm = () => {
                 console.log(userProfile)
                 // todo noa: when get works update formData state accordingly
             }).catch(err=>{
+                setIsNewUser(true);
                 console.log(err);
             })
     };
@@ -162,9 +164,13 @@ const UserForm = () => {
 
     return (
         <div className="user-form-main main-div">
-            <div className="user-form-header-div">
-                <Header/>
-            </div>
+            {
+                !isNewUser &&
+                <div className="user-form-header-div">
+                    <Header/>
+                </div>
+
+            }
             <div className="main-title-div mycard">
                 <label className="form-title">Profile Details</label>
             </div>
